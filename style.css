@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +14,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: #111;
-  font-family: Arial, Helvetica, sans-serif;
   --color: #fff;
   --card-col: #222;
 }
@@ -20,13 +24,49 @@ main {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
+}
+
+#cards {
+  width: 100%;
+  height: min(20rem, 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
 }
 
 .card {
-  height: min(20rem, 60%);
+  width: 90%;
+  height: 90%;
   background-color: var(--card-col);
   color: var(--color);
-  border: none;
   border-radius: 2rem;
   box-shadow: 0 0 2rem #000;
+}
+
+#buttons {
+  width: 80%;
+  display: flex;
+}
+
+#buttons > button {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: transparent;
+}
+/* debug */
+button:hover {
+  outline: 5px solid red;
+}
+
+#decline {
+  color: #f00;
+}
+
+#accept {
+  color: #0f0;
 }
