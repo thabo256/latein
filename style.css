@@ -27,7 +27,7 @@ main {
   align-items: center;
 }
 
-#cards {
+.cards {
   width: 100%;
   height: min(20rem, 60%);
   display: flex;
@@ -48,12 +48,12 @@ button {
   box-shadow: 0 0 2rem #000;
 }
 
-#buttons {
+.buttons {
   width: 80%;
   display: flex;
 }
 
-#buttons > button {
+.buttons > button {
   flex-grow: 1;
   padding: 1rem;
   background-color: transparent;
@@ -63,10 +63,10 @@ button:hover {
   outline: 5px solid red;
 }
 
-#decline {
+.decline {
   color: #f00;
 }
 
-#accept {
+.accept {
   color: #0f0;
 }
